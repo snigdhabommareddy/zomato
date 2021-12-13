@@ -27,7 +27,7 @@ a{
 /*search part*/
 .search{
     height:450px;
-    background-image: url("../images/tablefood.jpg");
+    background-image: url("./images/tablefood.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 450px;
