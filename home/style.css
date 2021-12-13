@@ -1,0 +1,295 @@
+*{
+    margin:auto;
+}
+/*header part*/
+.header{
+    height:60px;
+    background-color: burlywood;
+}
+.component{
+    color:brown;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top:2%;
+}
+.img{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    float:right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+/*search part*/
+.search{
+    height:450px;
+    background-image: url("../images/tablefood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 450px;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 4%;
+    position: absolute;
+    font-size:80px;
+    color:brown;
+}
+
+#logo > span {
+    margin-left: 31%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#heading{
+    margin-left: 25%;
+    margin-top: 17%;
+    position: absolute;
+    font-size:45px;
+    color:white;
+}
+
+.dropdown{
+    height:50px;
+    width:60%;
+    margin-left: 25%;
+    margin-top: 23%;
+    position: absolute;
+}
+
+select{
+    height:50px;
+    width:35%
+}
+
+.restaurantSelect{
+    width:50%
+}
+/*quicksearch part*/
+#QuickSearch{
+    width:80%;
+    margin-left:10%;
+    margin-top:3%;
+    display: inline-block;
+}
+
+#Heading{
+    display:block;
+    color:brown;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+
+#SubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.Container{
+    height:300px;
+    width:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 5px 10px 15px gray;
+}
+
+.Component1 >img{
+    width:100%;
+    height:200px;
+}
+
+.Component2{
+    margin-top: 5%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.componentHeading{
+    color:brown;
+    font-size: 25px;
+}
+.break{
+    color:brown !important;
+}
+.componentSubHeading{
+    color:gray;
+    font-size: 15px;
+}
+/*footer*/
+.footer{
+    text-align: center;
+    margin-bottom: 1%;
+}
+hr{
+    margin-top: 50px;
+}
+
+/*media queries*/
+
+@media screen and (max-width:1200px){
+    .header{
+        height:60px;
+    }
+    .component{
+        position: absolute;
+        top:1%;
+        font-size: 22px;
+    }
+    .search{
+        height:500px;
+        background-size: 100% 500px;
+    }
+    #logo{
+        margin-left: 43%;
+        margin-top: 7%;
+    }
+    #logo > span {
+        margin-top: 18%;
+    }    
+    #heading{
+        margin-left: 7%;
+        margin-top: 25%;
+        font-size: 60px;
+    }
+    .dropdown{
+        margin-left: 25%;
+        margin-top: 36%;
+    }
+    .Container{
+        width:48%;
+        height:400px;
+        
+    }
+    .Component1 >img{
+        width:100%;
+        height:250px;
+    }
+    .componentHeading{
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+    .componentSubHeading{
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .search{
+        height:450px;
+        background-size: 100% 450px;
+    }
+    #logo{
+        margin-left: 40%;
+        margin-top: 7%;
+    }
+    #logo > span {
+        margin-top: 18%;
+    } 
+    #heading{
+        margin-left: 7%;
+        margin-top: 29%;
+        font-size: 45px;
+    }
+    .dropdown{
+        margin-left: 25%;
+        margin-top: 40%;
+    }
+    .Container{
+        width:48%;
+        height:300px;
+        
+    }
+    .Component1 >img{
+        width:100%;
+        height:200px;
+    }
+    .componentHeading{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .componentSubHeading{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+    .header{
+        height:50px;
+    }
+    .component{
+        position: absolute;
+        top:1%;
+        font-size: 15px;
+    }
+    .img{
+        width:30px;
+        height:30px;
+        margin-top: 10px;
+    }
+    .search{
+        height:350px;
+        background-size: 100% 350px;
+    }
+    
+    #logo{
+        height:80px;
+        width:80px;
+        border-radius: 50%;
+        font-size:40px;
+        margin-left: 40%;
+        margin-top: 8%;
+    }
+    #logo > span {
+        margin-top: 18%;
+    } 
+    #heading{
+        margin-left: 7%;
+        margin-top: 32%;
+        font-size: 24px;
+    }
+    .dropdown{
+        margin-left: 17%;
+        margin-top: 50%;
+        height:30px;
+        width:80%;
+    }
+    #Heading{
+        font-size:25px;
+    }
+    
+    
+    #SubHeading{
+       font-size: 14px;
+    }
+    .Container{
+        width:100%;
+    }
+    .Component1 >img{
+        width:100%;
+        height:200px;
+    }
+    .componentHeading{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .componentSubHeading{
+        font-size: 15px;
+    }
+}

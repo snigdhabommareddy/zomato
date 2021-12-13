@@ -1,0 +1,162 @@
+*{
+    margin:auto;
+}
+/*header part*/
+.header{
+    height:60px;
+    width:100%;
+    background-color: burlywood;
+}
+.component{
+    color:brown;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top:2%;
+}
+
+.home{
+    color:brown !important;
+}
+.img{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    float:right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+/*details*/
+.container{
+    width:85%;
+    height:600px;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.pic{
+    width:45%;
+    height:400px;
+    border:4px groove gray;
+    float: left;
+}
+.pic > img {
+    width:100%;
+    height:400px;
+}
+.content{
+    width:52%;
+    height:600px;
+    margin-left: 2%;
+    float: left;
+    margin-top: -1%;
+}
+h2{
+    font-size: 40px;
+}
+.fa-star,.fa-star-half-full{
+    color:rgb(248, 182, 0);
+    margin-top: 2%;
+}
+.rating{
+    color:rgb(42, 184, 209);
+}
+.old{
+    padding-top: 3%;
+    color:grey;
+    font-size: large;
+}
+
+h3{
+    padding-top: 2%;
+    font-size: x-large;
+}
+span{
+    color:grey;
+    font-size: small;
+    padding-top: 1%;
+}
+.images{
+    padding-top: 5%;
+    display:flex
+}
+.icon{
+    width:50px;
+    height:50px;
+}
+h1{
+    color:green;
+    margin-top: 4%;
+}
+.btn{
+    width:200px;
+    height:50px;
+    margin-top: 5%;
+    margin-right: 8%;
+    background-color: orange;
+    color:white;
+    font-size: larger;
+    cursor:pointer;
+    border:none
+}
+.dark{
+    background-color: rgb(255, 238, 0);
+    color:black;
+}
+/*footer*/
+.footer{
+    text-align: center;
+    margin-bottom: 1%;
+}
+hr{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1200px){
+    .btn{
+        width:180px;
+    }
+}
+@media screen and (max-width:800px){
+    .container{
+        width:90%;
+    }
+    .content{
+        width:50%;
+    }
+    .btn{
+        width:300px;
+    }
+}
+@media screen and (max-width:600px){
+    .container{
+        width:85%;
+        display:flex;
+        flex-direction: column;
+    }
+    .pic{
+        width:100%;
+        height:200px;
+    }
+    .pic >img{
+        height:200px;
+    }
+    .content{
+        width:100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .btn{
+        width:250px;
+        align-items: center;
+    }
+    .footer{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+}
