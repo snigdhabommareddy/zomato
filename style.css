@@ -229,6 +229,7 @@ hr{
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:600px){
     .header{
         height:50px;
@@ -254,27 +255,26 @@ hr{
         border-radius: 50%;
         font-size:40px;
         margin-left: 40%;
-        margin-top: 8%;
+        margin-top: 15%;
     }
     #logo > span {
         margin-top: 18%;
     } 
     #heading{
         margin-left: 7%;
-        margin-top: 32%;
+        margin-top: 45%;
         font-size: 24px;
+        text-align: center;
     }
     .dropdown{
         margin-left: 17%;
-        margin-top: 50%;
+        margin-top: 70%;
         height:30px;
         width:80%;
     }
     #Heading{
         font-size:25px;
     }
-    
-    
     #SubHeading{
        font-size: 14px;
     }
@@ -291,5 +291,29 @@ hr{
     }
     .componentSubHeading{
         font-size: 15px;
+    }
+}
+@media screen and (max-width:450px){
+    .dropdown{
+        margin-left: 17%;
+        margin-top: 60%;
+        height:30px;
+        width:80%;
+    }
+}
+@media screen and (max-width:380px){
+    .dropdown{
+        margin-left: 17%;
+        margin-top: 65%;
+        height:30px;
+        width:80%;
+    }
+}
+@media screen and (max-width:330px){
+    .dropdown{
+        margin-left: 17%;
+        margin-top: 70%;
+        height:30px;
+        width:80%;
     }
 }
