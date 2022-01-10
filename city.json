@@ -1,0 +1,210 @@
+{
+    "city":[
+        {
+          "_id": 1,
+          "city_name": "Delhi",
+          "city": 1,
+          "country_name": "India"
+        },
+        {
+          "_id": 2,
+          "city_name": "Mumbai",
+          "city": 2,
+          "country_name": "India"
+        },
+        {
+            "_id": 3,
+            "city_name": "Pune",
+            "city": 3,
+            "country_name": "India"
+          },
+        {
+          "_id": 4,
+          "city_name": "Hyderabad",
+          "city": 4,
+          "country_name": "India"
+        },
+        {
+          "_id": 5,
+          "city_name": "Goa",
+          "city": 5,
+          "country_name": "India"
+        },
+        {
+          "_id": 6,
+          "city_name": "chennai",
+          "city": 6,
+          "country_name": "India"
+        }
+    ],
+    "hotels":[
+        {
+          "_id": 25,
+          "city_name": "Delhi",
+          "city": 1,
+          "category_id":1,
+          "hotel_name": "Bhukara"
+        },
+        {
+            "_id": 26,
+            "city_name": "Delhi",
+            "city": 1,
+            "category_id":1,
+            "hotel_name": "Rajinder De Dhaba"
+        },
+        {
+            "_id":27,
+            "city_name": "Delhi",
+            "city": 1,
+            "category_id":1,
+            "hotel_name": "Leo's Pizzeria"
+        },
+        {
+            "_id": 28,
+            "city_name": "Delhi",
+            "city": 1,
+            "category_id":1,
+            "hotel_name": "Sagar Ratna" 
+        },
+        {
+            "id": 5,
+            "city_name": "Mumbai",
+            "city": 2,
+            "category_id":2,
+            "hotel_name": "The Table"
+          },
+          {
+              "id": 6,
+              "city_name": "Mumbai",
+              "city": 2,
+              "category_id":2,
+              "hotel_name": "Wasabi by Morimoto"
+          },
+          {
+              "id": 7,
+              "city_name": "Mumbai",
+              "city": 2,
+              "category_id":2,
+              "hotel_name": "Bastian"
+          },
+          {
+              "id": 8,
+              "city_name": "Mumbai",
+              "city": 2,
+              "category_id":2,
+              "hotel_name": "The Clearing House" 
+          },
+          {
+            "id": 9,
+            "city_name": "pune",
+            "city": 3,
+            "category_id":3,
+            "hotel_name": "Vaishali, FC Road"
+          },
+          {
+              "id": 10,
+              "city_name": "pune",
+              "city": 3,
+              "category_id":3,
+              "hotel_name": "Nisarg, Erandwane."
+          },
+          {
+              "id": 11,
+              "city_name": "pune",
+              "city": 3,
+              "category_id":3,
+              "hotel_name": "Bubsterrs, Kalyani Nagar"
+          },
+          {
+              "id": 12,
+              "city_name": "pune",
+              "city": 3,
+              "category_id":3,
+              "hotel_name": "Mahlzeit, Koregaon Park" 
+          },
+          {
+            "id": 13,
+            "city_name": "Hyderabad",
+            "city": 4,
+            "category_id":4,
+            "hotel_name": "The Spicy Venue, Jubilee Hills."
+          },
+          {
+              "id": 14,
+              "city_name": "Hyderabad",
+              "city": 4,
+              "category_id":4,
+              "hotel_name": "United Kitchens of India, Jubilee Hills."
+          },
+          {
+              "id": 15,
+              "city_name": "Hyderabad",
+              "city": 4,
+              "category_id":4,
+              "hotel_name": "Jonathon's Kitchen, Gachibowli."
+          },
+          {
+              "id": 16,
+              "city_name": "Hyderabad",
+              "city": 4,
+              "category_id":4,
+              "hotel_name": "Haiku, Banjara Hills." 
+          },
+          {
+            "id": 17,
+            "city_name": "Goa",
+            "city": 5,
+            "category_id":5,
+            "hotel_name": "Olive Goa"
+          },
+          {
+              "id": 18,
+              "city_name": "Goa",
+              "city": 5,
+              "category_id":5,
+              "hotel_name": "Vinayak Family Restaurant"
+          },
+          {
+              "id": 19,
+              "city_name": "Goa",
+              "city": 5,
+              "category_id":5,
+              "hotel_name": "Gunpowder Goa"
+          },
+          {
+              "id": 20,
+              "city_name": "Goa",
+              "city": 5,
+              "category_id":5,
+              "hotel_name": " The Black Sheep Bistro" 
+          },
+          {
+            "id": 21,
+            "city_name": "Chennai",
+            "city": 6,
+            "category_id":6,
+            "hotel_name": "Basil With A Twist - T. Nagar"
+          },
+          {
+              "id": 22,
+              "city_name": "Chennai",
+              "city": 6,
+              "category_id":6,
+              "hotel_name": "Sunset Grill - Velachery"
+          },
+          {
+              "id": 23,
+              "city_name": "Chennai",
+              "city": 6,
+              "category_id":6,
+              "hotel_name": "Kaidi Kitchen"
+          },
+          {
+              "id": 24,
+              "city_name": "Chennai",
+              "city": 6,
+              "category_id":6,
+              "hotel_name": " Haunted" 
+          }
+    ]
+}

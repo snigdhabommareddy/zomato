@@ -1,19 +1,67 @@
+body{
+    background-color:white;
+    color:black
+}
+.mybody{
+    background-color:black;
+    color:white
+}
 .navbar-brand{
     font-weight: bolder;
+}
+.mode{
+   width:40px;
+   height:40px; 
 }
 .img{
     width:30px;
     height:30px;
     border-radius: 50%;
 }
-.carousel{
-    height:500px;
+#search{
+    height: 500px;
+    background-image:url('images/carousel1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 500px;
+}
+#logo{
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top:4%;
+    position: absolute;
+    font-size:80px;
+    color:rgb(8, 119, 8);
+    animation: movelogo 20s infinite;
+}
+
+@keyframes movelogo {
+    0% {margin-left: 45%;}
+    20% {margin-left: 40%;}
+    60% {margin-left: 45%;}
+    85% {margin-left: 40%;}
+    100% {margin-left: 45%;}
+}
+#logo > span {
+    margin-left: 30%;
+    margin-top: 8%;
+    position: absolute;
+}
+#heading{
+    font-size:40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
 }
 .dropdown{
     height:60px;
     width:80%;
-    margin-top: 10%;
-    margin-left: 10%;
+    position:absolute;
+    top:69%;
+    margin-left: 22%;
     margin-bottom: 5%;
 }
 
@@ -39,9 +87,114 @@ select{
     height:60%;
 }
 
-
-@media screen and (max-width:450px){
-    .carousel{
-        height:300px;
+#coupon{
+    height:420px;
+    width:900px;
+    background-image: url('./images/coupon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 420px;
+    visibility: hidden;
+    position:absolute;
+    left:15%;
+    top:18%;
+}
+.closed{
+    margin-left:850px;
+    color:crimson;
+    background-color:black;
+    border:none;
+    font-size: 35px;
+    cursor:pointer;
+}
+@media screen and (max-width:1200px){
+    #coupon{
+        height:420px;
+        width:700px;
+        left:15%;
+        top:13%;
+    }
+    .closed{
+        margin-left:650px;
+       font-size: 35px;
+    }
+}
+@media screen and (max-width:900px){
+    #heading{
+        font-size: 35px;
+    }
+    #coupon{
+        height:420px;
+        width:600px;
+        left:12%;
+        top:15%;
+    }
+    .closed{
+        margin-left:550px;
+       font-size: 35px;
+    }
+}
+@media screen and (max-width:600px){
+    #logo{
+        height:100px;
+        width:100px;
+        font-size:60px;
+        margin-top:10%;
+    }
+    #logo > span {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    #heading{
+        font-size:28px;
+    }
+}
+@media screen and (max-width:500px){
+    #coupon{
+        height:420px;
+        width:370px;
+        left:6%;
+        top:15%;
+    }
+    .closed{
+        margin-left:320px;
+       font-size: 35px;
+    }
+}
+@media screen and (max-width:400px){
+    #logo{
+        height:100px;
+        width:100px;
+        font-size:50px;
+        margin-top:10%;
+    }
+    #logo > span {
+        margin-left: 30%;
+        margin-top: 8%;
+    }
+    #heading{
+        font-size:28px;
+    }
+    #coupon{
+        height:420px;
+        width:320px;
+        left:6%;
+        top:15%;
+    }
+    .closed{
+        margin-left:270px;
+       font-size: 35px;
+    }
+}
+@media screen and (max-width:350px){
+    #coupon{
+        height:420px;
+        width:270px;
+        left:6%;
+        top:15%;
+    }
+    .closed{
+        margin-left:220px;
+       font-size: 35px;
     }
 }
