@@ -39,28 +39,28 @@
     ],
     "hotels":[
         {
-          "_id": 25,
+          "_id": 1,
           "city_name": "Delhi",
           "city": 1,
           "category_id":1,
           "hotel_name": "Bhukara"
         },
         {
-            "_id": 26,
+            "_id": 2,
             "city_name": "Delhi",
             "city": 1,
             "category_id":1,
             "hotel_name": "Rajinder De Dhaba"
         },
         {
-            "_id":27,
+            "_id":3,
             "city_name": "Delhi",
             "city": 1,
             "category_id":1,
             "hotel_name": "Leo's Pizzeria"
         },
         {
-            "_id": 28,
+            "_id": 4,
             "city_name": "Delhi",
             "city": 1,
             "category_id":1,
