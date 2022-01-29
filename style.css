@@ -71,6 +71,7 @@ select{
 }
 .card{
     height:300px;
+    box-shadow: 5px 7px 5px 7px rgb(226, 226, 226);
 }
 .card:hover{
     transform: scale(1.1);
@@ -107,6 +108,11 @@ select{
     font-size: 35px;
     cursor:pointer;
 }
+@media screen and (max-width:1440){
+    #heading{
+        top:35%;
+    }
+}
 @media screen and (max-width:1200px){
     #coupon{
         height:420px;
@@ -118,10 +124,14 @@ select{
         margin-left:650px;
        font-size: 35px;
     }
+    #heading{
+        top:43%;
+    }
 }
 @media screen and (max-width:900px){
     #heading{
         font-size: 35px;
+        top:56%;
     }
     #coupon{
         height:420px;

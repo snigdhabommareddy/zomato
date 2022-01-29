@@ -1,8 +1,9 @@
+//change mode
 function mode(){
     var bodychange=document.body;
     bodychange.classList.toggle('mybody');
 }
-
+//dropdown
 let url = "http://localhost:9876/city";
 let hotelUrl = "http://localhost:9876/hotels?category_id="
 
@@ -36,7 +37,7 @@ const getHotel = () => {
         }
     })
 }
-
+//coupon
 function test(){
     document.getElementById('coupon').style.visibility="visible"
 }

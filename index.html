@@ -22,9 +22,13 @@
 </head>
 
 <body>
-  <!--navbar start-->
+<!--navbar start-->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <a class="navbar-brand text-white ml-5" href="#">Zomato</a>
+    <div class="d-flex text-white">
+      <div id="icon"></div>
+      <p id="address"></p>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +49,6 @@
   </nav>
   <!--navbar end-->
   <!--carousel-->
-        
   <div id="search">
     <div id="logo">
         <span>E!</span>
@@ -66,7 +69,7 @@
       <button onclick="closeDiv()" class="closed">&times;</button>
     </div>
  </div>
- 
+
   <!--quick search part-->
   <div class="container mt-5">
     <h2 class="text-danger">Quick Search</h2>
@@ -145,6 +148,38 @@
 </script>
 <script>
   window.onload=test()
+</script>
+<script>
+  var y = document.getElementById("address")
+  var z =  document.getElementById('icon')
+  function geolocation(){
+      if(navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showPosition)
+      }else{
+          x.innerText="Geo Not Supported"
+      }
+  }
+
+  function showPosition(data){
+      console.log(data)
+      let lat = data.coords.latitude;
+      let long = data.coords.longitude
+      var url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+      /*var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.coords.latitude},${data.coords.longitude}&key=`;
+      */
+      fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+          console.log(data)                 
+          data.list.map((item) => {
+              console.log(item.temp.day)
+              y.innerText=`${item.temp.day}°C and ${item.weather[0].description}`
+              z.innerHTML=`<img class='card-img-top' src='https://openweathermap.org/img/w/${item.weather[0].icon}.png' alt='weather'/>`
+          })
+          
+      })
+  }
+  window.onload=geolocation()
 </script>
 </body>
 
