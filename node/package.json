@@ -1,0 +1,22 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "this is node app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snigdhabommareddy/zomato.git"
+  },
+  "author": "snigdha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snigdhabommareddy/zomato/issues"
+  },
+  "homepage": "https://github.com/snigdhabommareddy/zomato#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

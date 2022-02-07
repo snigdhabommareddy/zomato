@@ -1,0 +1,59 @@
+//Page 1
+
+List of city 
+http://localhost:6700/location
+
+List of resturants   
+http://localhost:6700/hotels
+
+hotels wrt to city 
+http://localhost:6700/hotels?state_id=3
+
+quick search data   
+http://localhost:6700/mealtypes
+
+
+//Page 2
+
+restaurants wrt to quickSearch 
+http://localhost:6700/hotels?mealtype_id=1
+
+filter
+> cuisine filter
+ data respect to cuisine and quickSearch
+http://localhost:6700/filter/2?cuisine=3
+
+> cost filter
+ http://localhost:6700/filter/2?lcost=200&hcost=1000
+
+
+ data respect to cuisine and cost 
+> cuisine filter + cost filter 
+http://localhost:6700/filter/4?lcost=200&hcost=500&cuisineId=3
+
+> sort
+    sort low to high in same quickSearch
+    http://localhost:6700/filter/4?cuisineId=3&sort=1
+
+    sort high to low in same quickSearch
+    http://localhost:6700/filter/4?cuisineId=3&sort=-1
+
+> pagination
+http://localhost:6700/filter/4?cuisineId=3&sort=1&skip=0&limit=5
+
+//Page 3
+
+> restaurants details
+http://localhost:6700/details/6
+
+> Menu of that restaurants
+http://localhost:6700/menu/5
+
+//page 4
+>menu items on user selection
+
+> api to place order
+
+//page 5
+
+> list all order

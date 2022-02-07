@@ -1,0 +1,19 @@
+////see all databases
+show dbs
+
+////to go inside dbs
+use databasename
+
+///to see all collection
+show collections
+
+///to find all data
+db.collectionname.find()
+db.location.find()
+db.location.find().pretty()
+
+////to create new databases
+use databasename
+
+///to insert data
+db.user.insert({_id:1,name:"snigdha"})
