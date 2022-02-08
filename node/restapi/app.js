@@ -6,14 +6,20 @@ const MongoClient = mongo.MongoClient;
 const mongoUrl="mongodb+srv://zomato:test12@cluster0.a9yt6.mongodb.net/zomatointern?retryWrites=true&w=majority"
 const dotenv=require('dotenv')
 dotenv.config();
+const bodyParser=require('body-parser')
+const cors=require('cors')
 let port=process.env.PORT || 8210;
 var db;
+
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
+app.use(cors())
 
 //get
 app.get('/',(req,res)=>{
     res.send("welcome to express");
 })
-//city
+//location
 app.get('/location',(req,res)=>{
     db.collection('location').find().toArray((err,result)=>{
         if(err) throw err;
@@ -113,6 +119,60 @@ app.get('/menu/:id',(req,res)=>{
 })
 //menu when user selects
 
+//get all orders
+app.get('/orders',(req,res)=>{
+    let email  = req.query.email
+    let query={};
+    if(email){
+        query={"email":email}
+    }
+    db.collection('orders').find(query).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+//place order(post)
+app.post('/placeorder',(req,res) => {
+    //console.log(req.body)
+    db.collection('orders').insert(req.body,(err,result) =>{
+        if(err) throw err;
+        res.send('Order Added')
+    })
+})
+
+
+app.post('/menuItem',(req,res)=>{
+    console.log(req.body)
+    db.collection('ResturantMenu').find({menu_id:{$in:req.body}}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+app.delete('/deleteorder',(req,res)=>{
+    db.collection('orders').remove({},(err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+
+app.put('/updateorder/:id',(req,res) => {
+    let oId = mongo.ObjectId(req.params.id)
+    let status = req.query.status?req.query.status:'Pending'
+    db.collection('orders').updateOne(
+        {_id:oId},
+        {$set:{
+            "status":status,
+            "bank_name":req.body.bank_name,
+            "bank_status":req.body.bank_status
+        }},(err,result)=>{
+            if(err) throw err;
+            res.send(`Status Updated to ${status}`)
+        }
+    )
+})
 
 MongoClient.connect(mongoUrl, (err,client) => {
     if(err) console.log("Error While Connecting");

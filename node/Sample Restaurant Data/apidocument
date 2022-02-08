@@ -2,58 +2,90 @@
 
 List of city 
 http://localhost:6700/location
+https://zomatonode.herokuapp.com/location
 
 List of resturants   
 http://localhost:6700/hotels
+https://zomatonode.herokuapp.com/hotels
 
 hotels wrt to city 
 http://localhost:6700/hotels?state_id=3
+https://zomatonode.herokuapp.com/hotels?state_id=3
 
 quick search data   
 http://localhost:6700/mealtypes
+https://zomatonode.herokuapp.com/mealtypes
 
 
 //Page 2
 
 restaurants wrt to quickSearch 
 http://localhost:6700/hotels?mealtype_id=1
+https://zomatonode.herokuapp.com/hotels?mealtype_id=1
 
 filter
 > cuisine filter
  data respect to cuisine and quickSearch
 http://localhost:6700/filter/2?cuisine=3
+https://zomatonode.herokuapp.com/filter/2?cuisine=3
 
 > cost filter
  http://localhost:6700/filter/2?lcost=200&hcost=1000
+ https://zomatonode.herokuapp.com/filter/2?lcost=200&hcost=1000
 
 
  data respect to cuisine and cost 
 > cuisine filter + cost filter 
 http://localhost:6700/filter/4?lcost=200&hcost=500&cuisineId=3
+https://zomatonode.herokuapp.com/filter/4?lcost=200&hcost=500&cuisineId=3
 
 > sort
     sort low to high in same quickSearch
     http://localhost:6700/filter/4?cuisineId=3&sort=1
+    https://zomatonode.herokuapp.com/filter/4?cuisineId=3&sort=1
 
     sort high to low in same quickSearch
     http://localhost:6700/filter/4?cuisineId=3&sort=-1
+    https://zomatonode.herokuapp.com/filter/4?cuisineId=3&sort=-1
 
 > pagination
 http://localhost:6700/filter/4?cuisineId=3&sort=1&skip=0&limit=5
+https://zomatonode.herokuapp.com/filter/4?cuisineId=3&sort=1&skip=0&limit=5
 
 //Page 3
 
 > restaurants details
 http://localhost:6700/details/6
+https://zomatonode.herokuapp.com/details/6
 
 > Menu of that restaurants
 http://localhost:6700/menu/5
+https://zomatonode.herokuapp.com/menu/5
 
 //page 4
 >menu items on user selection
+localhost:6700/menuItem
+https://zomatonode.herokuapp.com/menuItem
 
 > api to place order
+localhost:6700/placeorder
+https://zomatonode.herokuapp.com/placeorder
+
 
 //page 5
 
 > list all order
+http://localhost:6700/orders
+https://zomatonode.herokuapp.com/orders
+
+http://localhost:6700/orders?email="snigdhabommareddy@gmail.com"
+https://zomatonode.herokuapp.com/orders?email=%22snigdhabommareddy@gmail.com%22
+
+
+>delete order
+localhost:6700/deleteorder
+https://zomatonode.herokuapp.com/deleteorder
+
+>update order
+localhost:6700/updateorder/62022e166599a9556ab16826?status=success
+https://zomatonode.herokuapp.com/updateorder/620245df72c74a3dd1109f89?status=success

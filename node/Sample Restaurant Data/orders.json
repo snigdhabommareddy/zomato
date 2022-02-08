@@ -1,0 +1,19 @@
+db.orders.insert(
+[
+    {
+        "_id":1,
+        "id":101,
+        "rest_name":"Pandit Ji Paratha Hut",
+        "name":"user",
+        "phone":9874326482,
+        "email":"user@gmail.com",
+        "cost":100,
+        "address":"Hno9038",
+        "menuItems":[ 3,6 ],
+        "bank":"AXIS Bank",
+        "bank_status":"TXN_success",
+        "date":"08-02-2022",
+        "status":"pending"
+    }
+]
+)
