@@ -117,7 +117,7 @@ app.get('/menu/:id',(req,res)=>{
         res.send(result)
     })
 })
-//menu when user selects
+
 
 //get all orders
 app.get('/orders',(req,res)=>{
@@ -141,7 +141,7 @@ app.post('/placeorder',(req,res) => {
     })
 })
 
-
+//menu when user selects
 app.post('/menuItem',(req,res)=>{
     console.log(req.body)
     db.collection('ResturantMenu').find({menu_id:{$in:req.body}}).toArray((err,result)=>{
